@@ -740,7 +740,7 @@
       (reference "R1") (unit 1) (value "160 kOhms") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/767ce4c6-0e55-4543-92f0-34cb8237a544/b3eebb03-af8c-48e8-a7d9-5ec3741206fa"
-      (reference "R2") (unit 1) (value "75 kOhms") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R2") (unit 1) (value "75R") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/767ce4c6-0e55-4543-92f0-34cb8237a544/d1ea7795-8403-4edb-b959-1b29f77ed16f"
       (reference "R4") (unit 1) (value "22 kOhms") (footprint "Resistor_SMD:R_0603_1608Metric")
