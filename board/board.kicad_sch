@@ -460,15 +460,13 @@
     )
   )
 
-  (junction (at 213.36 99.06) (diameter 0) (color 0 0 0 0)
-    (uuid f8fc61fe-ff7c-408f-9e6d-a3d80fd390f6)
-  )
 
   (no_connect (at 203.2 86.36) (uuid 0aee284a-0c9b-43a8-a282-6eae1ac59f98))
   (no_connect (at 203.2 76.2) (uuid 15f07cf1-e081-4042-85ce-f2ed9ab61aa9))
   (no_connect (at 203.2 83.82) (uuid 2aa2444e-9960-4f2d-8d1e-ea6df8f4086e))
   (no_connect (at 87.63 86.36) (uuid 47f0369e-f4e0-4b01-833b-3e05d3439f3c))
   (no_connect (at 87.63 83.82) (uuid 631fa43c-c7fa-4f45-a65f-922abbc3bef3))
+  (no_connect (at 215.9 99.06) (uuid 879de362-dbfd-422f-8209-bd7f1ff7bb67))
   (no_connect (at 87.63 78.74) (uuid a7e30667-d232-4537-a7f7-21ae1c10b8d9))
   (no_connect (at 203.2 78.74) (uuid bd1b14b5-c910-421a-88d5-f86c1556ffce))
   (no_connect (at 203.2 88.9) (uuid bfc0ac9f-237e-4e12-8c62-18be5d6817ae))
@@ -477,10 +475,6 @@
   (wire (pts (xy 93.98 76.2) (xy 93.98 86.36))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 110dff93-fa14-46ee-bbf4-4e24b5545474)
-  )
-  (wire (pts (xy 213.36 99.06) (xy 215.9 99.06))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 2c9ea8cc-4702-4ddd-b1e7-66bb889d98cf)
   )
   (wire (pts (xy 213.36 99.06) (xy 213.36 102.87))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -536,7 +530,7 @@
     (uuid 3787921c-1252-47a4-a46e-7281e360658c)
     (property "Reference" "J1" (id 0) (at 76.835 67.31 0))
     (property "Value" "022_battery_cells" (id 1) (at 76.835 69.85 0))
-    (property "Footprint" "on_edge:debug_edge_2x05_device" (id 2) (at 68.58 68.58 0)
+    (property "Footprint" "on_edge:on_edge_2x05_device" (id 2) (at 68.58 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 68.58 68.58 0)
@@ -624,7 +618,7 @@
     (property "Value" "011_GPIO" (id 1) (at 223.52 85.7249 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "on_edge:debug_edge_2x05_host" (id 2) (at 222.25 68.58 0)
+    (property "Footprint" "on_edge:on_edge_2x05_host" (id 2) (at 222.25 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 222.25 68.58 0)
@@ -704,10 +698,10 @@
       (reference "C1") (unit 1) (value "4.7pF") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
     (path "/767ce4c6-0e55-4543-92f0-34cb8237a544/875404be-e359-458a-af29-1bd3403dd55f"
-      (reference "C2") (unit 1) (value "TPSE107K016R0100") (footprint "stpup:CAPMP7344X43-T_V")
+      (reference "C2") (unit 1) (value "TPSE107K016R0100") (footprint "b132:CAPMP7344X43-T_V")
     )
     (path "/767ce4c6-0e55-4543-92f0-34cb8237a544/301727b6-248b-4eb4-8c37-cb369ee1a241"
-      (reference "C3") (unit 1) (value "TPSE107K016R0100") (footprint "stpup:CAPMP7344X43-T_V")
+      (reference "C3") (unit 1) (value "TPSE107K016R0100") (footprint "b132:CAPMP7344X43-T_V")
     )
     (path "/767ce4c6-0e55-4543-92f0-34cb8237a544/78ce8c1e-89e0-4419-807a-81faccaa13a1"
       (reference "C4") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0402_1005Metric")
@@ -722,7 +716,7 @@
       (reference "C7") (unit 1) (value "33pF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/767ce4c6-0e55-4543-92f0-34cb8237a544/d618158f-4184-4754-aa33-65a98e706342"
-      (reference "D1") (unit 1) (value "PMEG100V100ELPDAZ") (footprint "stpup:PMEG100V100ELPDAZ")
+      (reference "D1") (unit 1) (value "PMEG100V100ELPDAZ") (footprint "b132:PMEG100V100ELPDAZ")
     )
     (path "/767ce4c6-0e55-4543-92f0-34cb8237a544/7b1add24-b218-4ce0-80c1-f1e7a71c0711"
       (reference "FB1") (unit 1) (value "200R_2A") (footprint "Inductor_SMD:L_0805_2012Metric")
@@ -731,13 +725,13 @@
       (reference "FB2") (unit 1) (value "200R_2A") (footprint "Inductor_SMD:L_0805_2012Metric")
     )
     (path "/3787921c-1252-47a4-a46e-7281e360658c"
-      (reference "J1") (unit 1) (value "022_battery_cells") (footprint "on_edge:debug_edge_2x05_device")
+      (reference "J1") (unit 1) (value "022_battery_cells") (footprint "on_edge:on_edge_2x05_device")
     )
     (path "/f9be9108-23a2-4fb6-b407-8be8eef9497e"
-      (reference "J2") (unit 1) (value "011_GPIO") (footprint "on_edge:debug_edge_2x05_host")
+      (reference "J2") (unit 1) (value "011_GPIO") (footprint "on_edge:on_edge_2x05_host")
     )
     (path "/767ce4c6-0e55-4543-92f0-34cb8237a544/58b75830-9e39-45c9-8547-367ebee8a907"
-      (reference "L1") (unit 1) (value "4.7uH") (footprint "stpup:WURTH 5040")
+      (reference "L1") (unit 1) (value "4.7uH") (footprint "b132:WURTH 5040")
     )
     (path "/b72b6f4a-7489-40f2-bb90-d75ae01aa368"
       (reference "LOGO1") (unit 1) (value "Logo_Open_Hardware_Small") (footprint "Symbol:OSHW-Symbol_6.7x6mm_SilkScreen")
@@ -758,7 +752,7 @@
       (reference "R6") (unit 1) (value "6.2 kOhms") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/767ce4c6-0e55-4543-92f0-34cb8237a544/7de04273-7eda-4419-ad6c-938bfee9f2d2"
-      (reference "U1") (unit 1) (value "LM2623LDX/NOPB") (footprint "stpup:NHE0014A_V")
+      (reference "U1") (unit 1) (value "LM2623LDX/NOPB") (footprint "b132:NHE0014A_V")
     )
   )
 )
